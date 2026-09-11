@@ -8,5 +8,9 @@ header img {
   width: 220px;
   height: 220px;
   object-fit: cover;
-  object-position: center;
+  object-position: 80% center;
+
+  transform: scale(1.35);
+  transform-origin: center;
+  clip-path: circle(50%);
 }
