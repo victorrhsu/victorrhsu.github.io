@@ -6,47 +6,57 @@
   <title>{{ page.title | default: site.title }}</title>
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: -apple-system, Helvetica, Arial, sans-serif; color: #222; }
-    .layout { display: flex; align-items: flex-start; min-height: 100vh; }
-    .sidebar {
-      position: sticky;
+    body {
+      margin: 0;
+      color: #373737;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .wrapper { max-width: 960px; margin: 0 auto; }
+    header {
+      width: 270px;
+      position: fixed;
       top: 0;
+      left: 0;
       height: 100vh;
-      width: 280px;
-      flex-shrink: 0;
       padding: 48px 24px;
       text-align: center;
-      border-right: 1px solid #eee;
       overflow-y: auto;
+      border-right: 1px solid #eee;
     }
-    .sidebar img {
+    header img {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
     }
-    .sidebar h1 { font-size: 22px; margin: 0 0 8px; }
-    .sidebar p { font-size: 15px; color: #555; margin: 4px 0; }
-    .main-content { flex: 1; padding: 48px 40px; max-width: 720px; }
-    @media (max-width: 700px) {
-      .layout { flex-direction: column; }
-      .sidebar { position: relative; height: auto; width: 100%; border-right: none; border-bottom: 1px solid #eee; }
+    header h1 { font-size: 22px; margin: 0 0 8px; }
+    header p { font-size: 15px; color: #555; margin: 4px 0; }
+    section {
+      margin-left: 300px;
+      padding: 48px 40px;
+      max-width: 640px;
+    }
+    @media (max-width: 800px) {
+      header { position: static; width: auto; height: auto; border-right: none; border-bottom: 1px solid #eee; }
+      section { margin-left: 0; }
     }
   </style>
 </head>
 <body>
-  <div class="layout">
-    <div class="sidebar">
+  <div class="wrapper">
+    <header>
       <img src="{{ site.author_photo }}" alt="{{ site.author_name }}">
       <h1>{{ site.author_name }}</h1>
       <p>{{ site.author_title }}</p>
       <p>{{ site.author_department }}</p>
       <p>{{ site.author_university }}</p>
-    </div>
-    <div class="main-content">
+    </header>
+    <section>
       {{ content }}
-    </div>
+    </section>
   </div>
 </body>
 </html>
