@@ -2,13 +2,15 @@ theme: jekyll-theme-minimal
 title: Victor Y. Hsu
 
 description: |
-  PhD Student
-  <br>
-  Department of Government
-  <br>
-  The University of Texas at Austin
-  <br>
-  <a href="mailto:vic.hsu@utexas.edu">vic.hsu@utexas.edu</a>
+  <div style="margin-top: 18px;">
+    PhD Student
+    <br>
+    Department of Government
+    <br>
+    The University of Texas at Austin
+    <br>
+    <a href="mailto:vic.hsu@utexas.edu">vic.hsu@utexas.edu</a>
+  </div>
 
 author_name: Victor Hsu
 author_title: PhD Student
