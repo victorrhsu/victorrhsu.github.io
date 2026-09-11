@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, Helvetica, Arial, sans-serif; color: #222; }
+    .layout { display: flex; align-items: flex-start; min-height: 100vh; }
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 280px;
+      flex-shrink: 0;
+      padding: 48px 24px;
+      text-align: center;
+      border-right: 1px solid #eee;
+      overflow-y: auto;
+    }
+    .sidebar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .sidebar h1 { font-size: 22px; margin: 0 0 8px; }
+    .sidebar p { font-size: 15px; color: #555; margin: 4px 0; }
+    .main-content { flex: 1; padding: 48px 40px; max-width: 720px; }
+    @media (max-width: 700px) {
+      .layout { flex-direction: column; }
+      .sidebar { position: relative; height: auto; width: 100%; border-right: none; border-bottom: 1px solid #eee; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">
+      <img src="{{ site.author_photo }}" alt="{{ site.author_name }}">
+      <h1>{{ site.author_name }}</h1>
+      <p>{{ site.author_title }}</p>
+      <p>{{ site.author_department }}</p>
+      <p>{{ site.author_university }}</p>
+    </div>
+    <div class="main-content">
+      {{ content }}
+    </div>
+  </div>
+</body>
+</html>
