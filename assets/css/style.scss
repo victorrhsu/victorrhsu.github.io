@@ -14,3 +14,37 @@ header img {
 header .view {
   display: none;
 }
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #267CB9;
+  padding: 16px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 16px;
+}
+
+.top-nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.top-nav a.active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 3px solid white;
+  padding-bottom: 6px;
+}
+
+.wrapper {
+  padding-top: 65px;
+}
