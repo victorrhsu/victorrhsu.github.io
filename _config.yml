@@ -1,6 +1,11 @@
 theme: jekyll-theme-minimal
 title: Victor Hsu
-description: PhD Student, Department of Government, The University of Texas at Austin
+description: |
+  PhD Student
+  <br>
+  Department of Government
+  <br>
+  The University of Texas at Austin
 author_name: Victor Hsu
 author_title: PhD Student
 author_department: Department of Government
