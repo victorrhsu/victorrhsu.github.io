@@ -5,7 +5,7 @@ title: Home
 
 <nav class="top-nav">
   <a href="/" class="active">Home</a>
-  <a href="/research">Research</a>
+  <a href="/dissertation">Dissertation</a>
   <a href="/teaching">Teaching</a>
   <a href="/photography">Photography</a>
 </nav>
