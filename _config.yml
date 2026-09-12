@@ -20,24 +20,25 @@ description: |
         CV
       </a>
 
-      <!-- ORCID -->
-      <a href="https://orcid.org/0009-0003-8906-8430"
-         target="_blank"
-         style="display: inline-flex; align-items: center;">
-        <img src="/assets/orcid.svg"
-             alt="ORCID"
-             style="width: 28px !important;
-                    height: 28px !important;
-                    max-width: 28px !important;
-                    margin: 0 !important;">
-      </a>
-
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/victor-hsu-2020/"
          target="_blank"
          style="display: inline-flex; align-items: center;">
         <img src="/assets/linkedin.svg"
              alt="LinkedIn"
+             style="width: 28px !important;
+                    height: 28px !important;
+                    max-width: 28px !important;
+                    margin: 0 !important;
+                    border-radius: 0 !important;">
+      </a>
+
+      <!-- ORCID -->
+      <a href="https://orcid.org/0009-0003-8906-8430"
+         target="_blank"
+         style="display: inline-flex; align-items: center;">
+        <img src="/assets/orcid.svg"
+             alt="ORCID"
              style="width: 28px !important;
                     height: 28px !important;
                     max-width: 28px !important;
