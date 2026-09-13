@@ -8,8 +8,8 @@ permalink: /photography/
 
   <div class="photo-intro-text">
     <p>
-      In addition to my research, I am also passionate about landscape and wildlife photography.
-      Here are some of my photographs from my travels across Europe, Asia, and North America.
+       I am also passionate about landscape and wildlife photography.
+       Below are some photographs from my travels across Europe, Asia, and North America.
     </p>
   </div>
 
