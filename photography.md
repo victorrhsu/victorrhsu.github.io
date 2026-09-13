@@ -8,7 +8,7 @@ permalink: /photography/
 
   <div class="photo-intro-text">
     <p>
-      I am also passionate about landscape and wildlife photography.
+      I am passionate about landscape and wildlife photography.
       Below are some photographs from my travels across Europe, Asia, and North America.
     </p>
   </div>
@@ -48,23 +48,38 @@ permalink: /photography/
     <div class="bird-spotlight-line"></div>
   </div>
 
-<div class="bird-grid">
+  <div class="bird-grid">
 
-  <div class="bird-card">
-    <img src="/assets/images/photography/Birdie_2.jpg" alt="Bird photographed in Leiden">
-    <p class="bird-caption">Leiden, the Netherlands, 2021</p>
+    <div class="bird-card">
+      <img src="/assets/images/photography/Birdie_2.jpg" alt="Bird photographed in Leiden">
+      <p class="bird-caption">Leiden, the Netherlands, 2021</p>
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/bird_2.JPG" alt="Birds photographed in Austin">
+      <p class="bird-caption">Austin, Texas, USA, 2026</p>
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/Robbin.jpg" alt="Robin photographed in Leiden">
+      <p class="bird-caption">Leiden, the Netherlands, 2021</p>
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/Birdie.jpg" alt="Bird photographed in Leiden">
+      <p class="bird-caption">Leiden, the Netherlands, 2021</p>
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/bird_3.JPG" alt="Bird photographed in Austin">
+      <p class="bird-caption">Austin, Texas, USA, 2025</p>
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/bird_1.JPG" alt="Bird photographed in San Antonio">
+      <p class="bird-caption">San Antonio, Texas, USA, 2025</p>
+    </div>
+
   </div>
-
-  <div class="bird-card">
-    <img src="/assets/images/photography/bird_2.JPG" alt="Birds photographed in Austin">
-    <p class="bird-caption">Austin, Texas, USA, 2026</p>
-  </div>
-
-  <div class="bird-card">
-    <img src="/assets/images/photography/Robbin.jpg" alt="Robin photographed in Leiden">
-    <p class="bird-caption">Leiden, the Netherlands, 2021</p>
-  </div>
-
-</div>
 
 </section>
