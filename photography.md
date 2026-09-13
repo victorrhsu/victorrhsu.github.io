@@ -4,4 +4,14 @@ title: Photography
 permalink: /photography/
 ---
 
-# Photography
+<style>
+header {
+  display: none;
+}
+
+section {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+</style>
