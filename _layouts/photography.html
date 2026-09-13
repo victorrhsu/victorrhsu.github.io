@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,19 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
-<body>
+<body class="photography-page">
 
- <nav class="top-nav">
-  <a href="/">Home</a>
-  <a href="/dissertation">Dissertation</a>
-  <a href="/teaching">Teaching</a>
-  <a href="/photography" class="active">Photography</a>
-</nav>
+  <nav class="top-nav">
+    <a href="/">Home</a>
+    <a href="/dissertation">Dissertation</a>
+    <a href="/teaching">Teaching</a>
+    <a href="/photography" class="active">Photography</a>
+  </nav>
 
-  <main style="padding-top: 80px;">
+  <main class="photography-content">
     {{ content }}
   </main>
 
 </body>
+
 </html>
