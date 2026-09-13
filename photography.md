@@ -7,8 +7,6 @@ permalink: /photography/
 <section class="photo-intro">
 
   <div class="photo-intro-text">
-    <h1>Photography</h1>
-
     <p>
       In addition to my research, I am also passionate about landscape and wildlife photography.
       Here are some of my photographs from my travels across Europe, Asia, and North America.
