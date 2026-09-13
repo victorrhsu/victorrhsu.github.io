@@ -10,30 +10,21 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   <style>
-    body.photography-page {
+    /* Photography content only */
+    .photography-content {
+      position: absolute;
+      top: 52px;
+      left: 0;
+      width: 100%;
       margin: 0;
       padding: 0;
-    }
-
-    .photography-page .top-nav {
-      transition: transform 0.3s ease;
-    }
-
-    .photography-page .top-nav.nav-hidden {
-      transform: translateY(-100%);
-    }
-
-    .photography-content {
-      margin: 0;
-      padding: 52px 0 0 0;
-      width: 100%;
       max-width: none;
     }
 
     .photo-section {
+      width: 100%;
       margin: 0;
       padding: 0;
-      width: 100%;
       line-height: 0;
     }
 
@@ -44,10 +35,19 @@
       margin: 0;
       padding: 0;
     }
+
+    /* Only controls hiding the existing nav */
+    #photo-nav {
+      transition: transform 0.3s ease;
+    }
+
+    #photo-nav.nav-hidden {
+      transform: translateY(-100%);
+    }
   </style>
 </head>
 
-<body class="photography-page">
+<body>
 
   <nav class="top-nav" id="photo-nav">
     <a href="/">Home</a>
