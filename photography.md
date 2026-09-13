@@ -48,20 +48,23 @@ permalink: /photography/
     <div class="bird-spotlight-line"></div>
   </div>
 
-  <div class="bird-grid">
+<div class="bird-grid">
 
-    <div class="bird-card">
-      <img src="/assets/images/photography/Birdie_2.jpg" alt="Bird photograph">
-    </div>
-
-    <div class="bird-card">
-      <img src="/assets/images/photography/bird_2.JPG" alt="Bird photograph">
-    </div>
-
-    <div class="bird-card">
-      <img src="/assets/images/photography/Robbin.jpg" alt="Bird photograph">
-    </div>
-
+  <div class="bird-card">
+    <img src="/assets/images/photography/Birdie_2.jpg" alt="Bird photographed in Leiden">
+    <p class="bird-caption">Leiden, the Netherlands, 2021</p>
   </div>
+
+  <div class="bird-card">
+    <img src="/assets/images/photography/bird_2.JPG" alt="Birds photographed in Austin">
+    <p class="bird-caption">Austin, Texas, USA, 2026</p>
+  </div>
+
+  <div class="bird-card">
+    <img src="/assets/images/photography/Robbin.jpg" alt="Robin photographed in Leiden">
+    <p class="bird-caption">Leiden, the Netherlands, 2021</p>
+  </div>
+
+</div>
 
 </section>
