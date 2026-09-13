@@ -22,7 +22,6 @@
       max-width: none;
     }
 
-    /* First-screen intro */
     .photo-intro {
       display: grid;
       grid-template-columns: 1fr 600px;
@@ -66,23 +65,51 @@
       object-fit: contain;
     }
 
-    /* Full-width gallery below intro */
-    .photo-section {
+    .photo-slider {
+      position: relative;
       width: 100%;
-      margin: 0;
-      padding: 0;
-      line-height: 0;
+      overflow: hidden;
+      background: black;
     }
 
-    .photo-section img {
+    .slide {
+      display: none;
+      width: 100%;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
       display: block;
       width: 100%;
       height: auto;
       margin: 0;
-      padding: 0;
     }
 
-    /* Hide nav when scrolling down */
+    .slider-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: white;
+    }
+
     #photo-nav {
       transition: transform 0.3s ease;
     }
@@ -91,16 +118,14 @@
       transform: translateY(-100%);
     }
 
-    /* Tablet */
     @media (max-width: 900px) {
       .photo-intro {
-        grid-template-columns: 1fr 380px;
+        grid-template-columns: 1fr 420px;
         gap: 40px;
         width: calc(100% - 60px);
       }
     }
 
-    /* Mobile */
     @media (max-width: 750px) {
       .photo-intro {
         grid-template-columns: 1fr;
@@ -150,11 +175,37 @@
 
       lastScrollY = currentScrollY;
     });
+
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+
+    setInterval(nextSlide, 3000);
+
+    dots.forEach((dot) => {
+      dot.addEventListener("click", function () {
+        const index = Number(this.dataset.slide);
+        showSlide(index);
+      });
+    });
   </script>
-
-</body>
-
-</html>
 
 </body>
 
