@@ -275,7 +275,7 @@
     }
 
     function startSlideshow() {
-      slideTimer = setInterval(nextSlide, 5000);
+      slideTimer = setInterval(nextSlide, 3000);
     }
 
     dots.forEach((dot) => {
@@ -289,6 +289,7 @@
       });
     });
 
+    /* Start immediately when Photography page loads */
     startSlideshow();
   </script>
 
