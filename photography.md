@@ -7,19 +7,13 @@ permalink: /photography/
 <section class="photo-intro">
 
   <div class="photo-intro-text">
-    <h1>Photography</h1>
+  <h1>Photography</h1>
 
-    <p>
-      I have always been drawn to landscape photography because it allows me
-      to slow down and pay attention to scale, light, weather, and place.
-    </p>
-
-    <p>
-      Mountains in particular have a way of making everything else feel
-      smaller. This page is a collection of photographs from places that
-      have stayed with me.
-    </p>
-  </div>
+  <p>
+    In addition to my research, I am also passionate about landscape and wildlife photography.
+    Here are some of my photographs from my travels across Europe, Asia, and North America.
+  </p>
+</div>
 
   <div class="photo-intro-image">
     <img src="/assets/images/photography/DSC_0379.jpg" alt="Landscape photography">
