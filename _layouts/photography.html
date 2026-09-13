@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>{{ page.title }} | Victor Y. Hsu</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+    }
+
+    .top-nav {
+      background: #417fb8;
+      padding: 14px 0;
+    }
+
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .top-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .top-nav a.active {
+      font-weight: bold;
+      border-bottom: 3px solid white;
+      padding-bottom: 8px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <a href="/">Home</a>
+      <a href="/dissertation/">Dissertation</a>
+      <a href="/teaching/">Teaching</a>
+      <a href="/photography/" class="active">Photography</a>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+</body>
+</html>
