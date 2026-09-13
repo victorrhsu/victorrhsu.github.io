@@ -7,16 +7,16 @@ permalink: /photography/
 <section class="photo-intro">
 
   <div class="photo-intro-text">
-  <h1>Photography</h1>
+    <h1>Photography</h1>
 
-  <p>
-    In addition to my research, I am also passionate about landscape and wildlife photography.
-    Here are some of my photographs from my travels across Europe, Asia, and North America.
-  </p>
-</div>
+    <p>
+      In addition to my research, I am also passionate about landscape and wildlife photography.
+      Here are some of my photographs from my travels across Europe, Asia, and North America.
+    </p>
+  </div>
 
   <div class="photo-intro-image">
-    <img src="/assets/images/photography/DSC_0379.jpg" alt="Landscape photography">
+    <img src="/assets/images/photography/Meerkat.jpg" alt="Meerkat">
   </div>
 
 </section>
