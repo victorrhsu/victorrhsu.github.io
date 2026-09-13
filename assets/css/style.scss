@@ -24,9 +24,9 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   background-color: #267CB9;
-  padding: 16px 0;
-  padding-left: calc((100% - 860px) / 2);
+  padding: 16px max(20px, calc((100vw - 860px) / 2));
   text-align: left;
   z-index: 1000;
 }
