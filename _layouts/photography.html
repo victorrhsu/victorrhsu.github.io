@@ -130,6 +130,13 @@
     .bird-spotlight {
       background: white;
       padding: 90px 60px 100px;
+
+      width: 100%;
+      max-width: none;
+      float: none;
+
+      margin: 0;
+      box-sizing: border-box;
     }
 
     .bird-spotlight-heading {
@@ -156,6 +163,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
 
+      width: 100%;
       max-width: 1320px;
       margin: 0 auto;
     }
@@ -283,7 +291,7 @@
     }
 
     function startSlideshow() {
-      slideTimer = setInterval(nextSlide, 3000);
+      slideTimer = setInterval(nextSlide, 5000);
     }
 
     dots.forEach((dot) => {
