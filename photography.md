@@ -4,21 +4,6 @@ title: Photography
 permalink: /photography/
 ---
 
-<section class="photo-intro">
-
-  <div class="photo-intro-text">
-    <p>
-      I am passionate about landscape and wildlife photography.
-      Below are some photographs from my travels across Europe, Asia, and North America.
-    </p>
-  </div>
-
-  <div class="photo-intro-image">
-    <img src="/assets/images/photography/Meerkat.jpg" alt="Meerkat">
-  </div>
-
-</section>
-
 <div class="photo-slider">
 
   <div class="slide active">
@@ -40,6 +25,17 @@ permalink: /photography/
   </div>
 
 </div>
+
+<section class="photo-intro">
+
+  <div class="photo-intro-text">
+    <p>
+      I am passionate about landscape and wildlife photography.
+      Below are some photographs from my travels across Europe, Asia, and North America.
+    </p>
+  </div>
+
+</section>
 
 <section class="bird-spotlight">
 
