@@ -30,8 +30,7 @@ permalink: /photography/
 
   <div class="photo-intro-text">
     <p>
-      I am passionate about landscape and wildlife photography.
-      Below are some photographs from my travels across Europe, Asia, and North America.
+      I'm passionate about landscape and wildlife photography. This page features a selection of photographs captured on my travels across Europe, Asia, and North America.
     </p>
   </div>
 
