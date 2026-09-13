@@ -8,11 +8,52 @@
   <title>{{ page.title }} | Victor Y. Hsu</title>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <style>
+    /* Photography page only */
+
+    body.photography-page {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .photography-page .top-nav {
+      box-sizing: border-box;
+      transition: transform 0.3s ease;
+    }
+
+    .photography-page .top-nav.nav-hidden {
+      transform: translateY(-100%);
+    }
+
+    .photography-content {
+      margin: 0;
+      padding: 52px 0 0 0;
+      width: 100%;
+      max-width: none;
+    }
+
+    .photo-section {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .photo-section img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 
 <body class="photography-page">
 
-  <nav class="top-nav">
+  <nav class="top-nav" id="photo-nav">
     <a href="/">Home</a>
     <a href="/dissertation">Dissertation</a>
     <a href="/teaching">Teaching</a>
@@ -22,6 +63,23 @@
   <main class="photography-content">
     {{ content }}
   </main>
+
+  <script>
+    let lastScrollY = window.scrollY;
+    const nav = document.getElementById("photo-nav");
+
+    window.addEventListener("scroll", function () {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 60) {
+        nav.classList.add("nav-hidden");
+      } else {
+        nav.classList.remove("nav-hidden");
+      }
+
+      lastScrollY = currentScrollY;
+    });
+  </script>
 
 </body>
 
