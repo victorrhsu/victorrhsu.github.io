@@ -4,6 +4,6 @@ title: Photography
 permalink: /photography/
 ---
 
-# Photography
-
-A selection of photographs from my travels and everyday life.
+<div class="hero-photo">
+  <img src="/assets/images/photography/The%20Climber.jpg" alt="The Climber">
+</div>
