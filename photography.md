@@ -40,3 +40,28 @@ permalink: /photography/
   </div>
 
 </div>
+
+<section class="bird-spotlight">
+
+  <div class="bird-spotlight-heading">
+    <h2>BIRD SPOTLIGHT</h2>
+    <div class="bird-spotlight-line"></div>
+  </div>
+
+  <div class="bird-grid">
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/Birdie_2.jpg" alt="Bird photograph">
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/bird_2.JPG" alt="Bird photograph">
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/Robbin.jpg" alt="Bird photograph">
+    </div>
+
+  </div>
+
+</section>
