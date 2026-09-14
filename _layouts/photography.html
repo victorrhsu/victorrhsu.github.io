@@ -116,7 +116,9 @@
     /* Bird Spotlight section */
     .bird-spotlight {
       background: white;
-      padding: 90px 60px 100px;
+
+      /* More breathing room around gallery */
+      padding: 100px 70px 120px;
 
       width: 100%;
       max-width: none;
@@ -128,7 +130,7 @@
 
     .bird-spotlight-heading {
       text-align: center;
-      margin-bottom: 55px;
+      margin-bottom: 60px;
     }
 
     .bird-spotlight-heading h2 {
@@ -145,13 +147,19 @@
       margin: 24px auto 0;
     }
 
+    /* Gallery */
     .bird-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
 
-      width: 100%;
-      max-width: 1320px;
+      /* Larger gaps like the reference */
+      column-gap: 34px;
+      row-gap: 65px;
+
+      /* Slightly narrower overall gallery */
+      width: calc(100% - 80px);
+      max-width: 1180px;
+
       margin: 0 auto;
     }
 
@@ -162,12 +170,16 @@
     .bird-card img {
       display: block;
       width: 100%;
-      height: 330px;
+
+      /* Smaller image height */
+      height: 270px;
+
       object-fit: cover;
     }
 
     .bird-caption {
-      margin: 18px 0 0;
+      margin: 14px 0 0;
+
       text-align: center;
       font-size: 15px;
       line-height: 1.5;
@@ -187,6 +199,20 @@
     @media (max-width: 900px) {
       .photo-intro {
         padding: 75px 30px;
+      }
+
+      .bird-spotlight {
+        padding: 80px 40px 100px;
+      }
+
+      .bird-grid {
+        width: 100%;
+        column-gap: 24px;
+        row-gap: 45px;
+      }
+
+      .bird-card img {
+        height: 230px;
       }
     }
 
@@ -208,9 +234,14 @@
         padding: 70px 25px;
       }
 
+      .bird-spotlight-heading {
+        margin-bottom: 45px;
+      }
+
       .bird-grid {
         grid-template-columns: 1fr;
-        gap: 28px;
+        width: 100%;
+        gap: 38px;
       }
 
       .bird-card img {
