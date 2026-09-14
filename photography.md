@@ -60,6 +60,21 @@ permalink: /photography/
       <p class="bird-caption">Leiden, the Netherlands, 2021</p>
     </div>
 
+     <div class="bird-card">
+      <img src="/assets/images/photography/Toco%20Toucan.jpg" alt="Toco Toucan photographed in Amsterdam">
+      <p class="bird-caption">Amsterdam, the Netherlands, 2023</p>
+    </div>
+    
+    <div class="bird-card">
+      <img src="/assets/images/photography/Blue-tailed%20bee-eater.jpg" alt="Blue-tailed bee-eater photographed in Amsterdam">
+      <p class="bird-caption">Amsterdam, the Netherlands, 2023</p>
+    </div>
+
+    <div class="bird-card">
+      <img src="/assets/images/photography/Grey%20Heron.jpg" alt="Grey Heron photographed in Alphen aan den Rijn">
+      <p class="bird-caption">Alphen aan den Rijn, the Netherlands, 2023</p>
+    </div>
+
     <div class="bird-card">
       <img src="/assets/images/photography/Birdie.jpg" alt="Bird photographed in Leiden">
       <p class="bird-caption">Leiden, the Netherlands, 2021</p>
@@ -75,20 +90,6 @@ permalink: /photography/
       <p class="bird-caption">San Antonio, Texas, USA, 2025</p>
     </div>
 
-     <div class="bird-card">
-      <img src="/assets/images/photography/Toco%20Toucan.jpg" alt="Toco Toucan photographed in Amsterdam">
-      <p class="bird-caption">Amsterdam, the Netherlands, 2023</p>
-    </div>
-    
-    <div class="bird-card">
-      <img src="/assets/images/photography/Blue-tailed%20bee-eater.jpg" alt="Blue-tailed bee-eater photographed in Amsterdam">
-      <p class="bird-caption">Amsterdam, the Netherlands, 2023</p>
-    </div>
-
-    <div class="bird-card">
-      <img src="/assets/images/photography/Grey%20Heron.jpg" alt="Grey Heron photographed in Alphen aan den Rijn">
-      <p class="bird-caption">Alphen aan den Rijn, the Netherlands, 2023</p>
-    </div>
 
   </div>
 
