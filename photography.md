@@ -75,13 +75,13 @@ permalink: /photography/
       <p class="bird-caption">San Antonio, Texas, USA, 2025</p>
     </div>
 
-    <div class="bird-card">
-      <img src="/assets/images/photography/Blue-tailed%20bee-eater.jpg" alt="Blue-tailed bee-eater photographed in Amsterdam">
+     <div class="bird-card">
+      <img src="/assets/images/photography/Toco%20Toucan.jpg" alt="Toco Toucan photographed in Amsterdam">
       <p class="bird-caption">Amsterdam, the Netherlands, 2023</p>
     </div>
-
+    
     <div class="bird-card">
-      <img src="/assets/images/photography/Toco%20Toucan.jpg" alt="Toco Toucan photographed in Amsterdam">
+      <img src="/assets/images/photography/Blue-tailed%20bee-eater.jpg" alt="Blue-tailed bee-eater photographed in Amsterdam">
       <p class="bird-caption">Amsterdam, the Netherlands, 2023</p>
     </div>
 
