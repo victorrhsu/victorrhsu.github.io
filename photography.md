@@ -6,14 +6,9 @@ permalink: /photography/
 
 <div class="photo-slider">
 
- <div class="slide active">
-  <img
-    src="/assets/images/photography/The%20Climber.jpg"
-    alt="The Climber"
-    loading="eager"
-    fetchpriority="high"
-  >
-</div>
+ <div class="slide active"> 
+  <img src="/assets/images/photography/The%20Climber.jpg" alt="The Climber">
+ </div>
 
   <div class="slide">
     <img src="/assets/images/photography/Chamonix.jpg" alt="Chamonix">
