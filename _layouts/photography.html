@@ -9,6 +9,15 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
+  <!-- IMPORTANT:
+       Replace this with the path to your FIRST slideshow photo -->
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/images/photo1.jpg"
+    fetchpriority="high"
+  >
+
   <style>
     body {
       margin: 0;
@@ -53,25 +62,38 @@
       color: #555;
     }
 
-    /* Full-screen slideshow */
+    /* =========================
+       FULL-SCREEN SLIDESHOW
+       ========================= */
+
     .photo-slider {
       position: relative;
+
       width: 100%;
       height: 100vh;
+
       overflow: hidden;
-      background: black;
+
+      /* Prevents bright white flash while image loads */
+      background: #111;
     }
 
     .slide {
       position: absolute;
-      top: 0;
-      left: 0;
+      inset: 0;
 
       width: 100%;
       height: 100%;
 
       opacity: 0;
+
       transition: opacity 1.5s ease-in-out;
+    }
+
+    /* First slide is visible immediately */
+    .slide:first-child {
+      opacity: 1;
+      z-index: 1;
     }
 
     .slide.active {
@@ -81,29 +103,41 @@
 
     .slide img {
       display: block;
+
       width: 100%;
       height: 100%;
+
       object-fit: cover;
+    }
+
+    /* Prevent first image from fading in slowly */
+    .slide:first-child img {
+      opacity: 1;
     }
 
     /* Slideshow dots */
     .slider-dots {
       position: absolute;
+
       bottom: 25px;
       left: 50%;
+
       transform: translateX(-50%);
 
       display: flex;
       gap: 9px;
+
       z-index: 10;
     }
 
     .dot {
       width: 10px;
       height: 10px;
+
       border-radius: 50%;
 
       background: rgba(255, 255, 255, 0.5);
+
       cursor: pointer;
 
       transition: background 0.4s ease;
@@ -113,18 +147,22 @@
       background: white;
     }
 
-    /* Bird Spotlight section */
+    /* =========================
+       BIRD SPOTLIGHT
+       ========================= */
+
     .bird-spotlight {
       background: white;
 
-      /* More breathing room around gallery */
       padding: 100px 70px 120px;
 
       width: 100%;
       max-width: none;
+
       float: none;
 
       margin: 0;
+
       box-sizing: border-box;
     }
 
@@ -135,28 +173,34 @@
 
     .bird-spotlight-heading h2 {
       margin: 0;
+
       font-size: 22px;
       font-weight: 500;
+
       letter-spacing: 4px;
     }
 
     .bird-spotlight-line {
       width: 40px;
       height: 1px;
+
       background: #777;
+
       margin: 24px auto 0;
     }
 
-    /* Gallery */
+    /* =========================
+       GALLERY
+       ========================= */
+
     .bird-grid {
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
 
-      /* Larger gaps like the reference */
       column-gap: 34px;
       row-gap: 65px;
 
-      /* Slightly narrower overall gallery */
       width: calc(100% - 80px);
       max-width: 1180px;
 
@@ -169,9 +213,8 @@
 
     .bird-card img {
       display: block;
-      width: 100%;
 
-      /* Smaller image height */
+      width: 100%;
       height: 270px;
 
       object-fit: cover;
@@ -181,12 +224,17 @@
       margin: 14px 0 0;
 
       text-align: center;
+
       font-size: 15px;
       line-height: 1.5;
+
       color: #666;
     }
 
-    /* Navigation hide/show */
+    /* =========================
+       NAVIGATION
+       ========================= */
+
     #photo-nav {
       transition: transform 0.3s ease;
     }
@@ -195,8 +243,12 @@
       transform: translateY(-100%);
     }
 
-    /* Tablet */
+    /* =========================
+       TABLET
+       ========================= */
+
     @media (max-width: 900px) {
+
       .photo-intro {
         padding: 75px 30px;
       }
@@ -207,6 +259,7 @@
 
       .bird-grid {
         width: 100%;
+
         column-gap: 24px;
         row-gap: 45px;
       }
@@ -216,8 +269,12 @@
       }
     }
 
-    /* Mobile */
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 750px) {
+
       .photo-intro {
         padding: 60px 25px;
       }
@@ -240,7 +297,9 @@
 
       .bird-grid {
         grid-template-columns: 1fr;
+
         width: 100%;
+
         gap: 38px;
       }
 
@@ -265,63 +324,130 @@
   </main>
 
   <script>
-    /* Hide navigation when scrolling down */
+
+    /* =========================
+       NAVIGATION HIDE / SHOW
+       ========================= */
+
     let lastScrollY = window.scrollY;
+
     const nav = document.getElementById("photo-nav");
 
-    window.addEventListener("scroll", function () {
-      const currentScrollY = window.scrollY;
+    window.addEventListener(
+      "scroll",
+      function () {
 
-      if (currentScrollY > lastScrollY && currentScrollY > 60) {
-        nav.classList.add("nav-hidden");
-      } else {
-        nav.classList.remove("nav-hidden");
-      }
+        const currentScrollY = window.scrollY;
 
-      lastScrollY = currentScrollY;
-    });
+        if (
+          currentScrollY > lastScrollY &&
+          currentScrollY > 60
+        ) {
+          nav.classList.add("nav-hidden");
+        } else {
+          nav.classList.remove("nav-hidden");
+        }
 
-    /* Slideshow */
+        lastScrollY = currentScrollY;
+      },
+      { passive: true }
+    );
+
+
+    /* =========================
+       SLIDESHOW
+       ========================= */
+
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
 
     let currentSlide = 0;
     let slideTimer;
 
+
     function showSlide(index) {
+
       slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
+
+        if (i === index) {
+          slide.classList.add("active");
+        } else {
+          slide.classList.remove("active");
+        }
+
       });
 
+
       dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === index);
+
+        if (i === index) {
+          dot.classList.add("active");
+        } else {
+          dot.classList.remove("active");
+        }
+
       });
+
 
       currentSlide = index;
     }
 
+
     function nextSlide() {
-      const next = (currentSlide + 1) % slides.length;
+
+      const next =
+        (currentSlide + 1) % slides.length;
+
       showSlide(next);
     }
 
+
     function startSlideshow() {
-      slideTimer = setInterval(nextSlide, 4000);
+
+      clearInterval(slideTimer);
+
+      slideTimer = setInterval(
+        nextSlide,
+        4000
+      );
     }
 
+
+    /* Dot navigation */
+
     dots.forEach((dot) => {
-      dot.addEventListener("click", function () {
-        clearInterval(slideTimer);
 
-        const index = Number(this.dataset.slide);
-        showSlide(index);
+      dot.addEventListener(
+        "click",
+        function () {
 
-        startSlideshow();
-      });
+          clearInterval(slideTimer);
+
+          const index =
+            Number(this.dataset.slide);
+
+          showSlide(index);
+
+          startSlideshow();
+        }
+      );
+
     });
 
-    /* Start immediately when Photography page loads */
-    startSlideshow();
+
+    /* =========================
+       INITIAL LOAD
+       ========================= */
+
+    if (slides.length > 0) {
+
+      /* Immediately activate first photo */
+      showSlide(0);
+
+      /* Begin slideshow */
+      startSlideshow();
+    }
+
   </script>
 
 </body>
