@@ -40,13 +40,14 @@ footer {
 }
 
 .top-nav a:hover {
-  color: white;
+  color: #267CB9;
   text-decoration: none;
 }
 
 .top-nav a.active {
   color: #267CB9;
-  font-weight: bold;
+  font-weight: normal;
+  text-shadow: 0.35px 0 currentColor, -0.35px 0 currentColor;
   text-decoration: none;
   border-bottom: none;
 }
