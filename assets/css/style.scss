@@ -25,14 +25,14 @@ footer {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #244968;
   padding: 16px max(20px, calc((100vw - 860px) / 2));
   text-align: left;
   z-index: 1000;
 }
 
 .top-nav a {
-  color: #267CB9;
+  color: #d9d9d9;
   text-decoration: none;
   margin-right: 30px;
   font-size: 16px;
@@ -40,15 +40,13 @@ footer {
 }
 
 .top-nav a:hover {
-  color: #267CB9;
-  text-shadow: 0.35px 0 currentColor, -0.35px 0 currentColor;
+  color: white;
   text-decoration: none;
 }
 
 .top-nav a.active {
-  color: #267CB9;
+  color: white;
   font-weight: normal;
-  text-shadow: 0.35px 0 currentColor, -0.35px 0 currentColor;
   text-decoration: none;
   border-bottom: none;
 }
@@ -56,3 +54,4 @@ footer {
 .wrapper {
   padding-top: 65px;
 }
+
